@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confituur & Co</title>
+
+    <meta name="shop-build" content="static-web:preserveLayer=jam-v1; token-seed=42; ui-mode=market" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" />
+
+
+</head>
+
+
+<body>
+    <header>
+        <nav class="main-nav" aria-label="Hoofdnavigatie">
+            <a href="#products">Producten</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <div class="hero__text">
+                <h1>Ambacht in een potje.</h1>
+                <p>Handgemaakte confituur met echte stukken fruit. Kleine batches, grote smaak.</p>
+                <a class="btn" href="#products">Bekijk alle confituren</a>
+            </div>
+
+            <div class="hero__card">
+                <p class="hero__badge">Small batch</p>
+                <p class="hero__big">🍓</p>
+                <p class="hero__small">Vandaag gemaakt, morgen op je tafel.</p>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <header class="section__title">
+                <h2>Onze favorieten</h2>
+                <p>Minstens 6 producten in cards met label + link naar detail.</p>
+            </header>
+
+            <div class="product-grid">
+                <article class="card">
+                    <div class="card__media" aria-label="Aardbei confituur"></div>
+                    <div class="card__body">
+                        <h3>Aardbei & Vanille</h3>
+                        <p class="price">€ 5,90</p>
+                        <span class="badge badge--new">Nieuw</span>
+                        <a class="btn btn--ghost" href="products/product-1.html">Bekijk</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media card__media--apricot" aria-label="Abrikoos confituur"></div>
+                    <div class="card__body">
+                        <h3>Abrikoos</h3>
+                        <p class="price">€ 5,50</p>
+                        <span class="badge badge--sale">Sale</span>
+                        <a class="btn btn--ghost" href="products/product-2.html">Bekijk</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media card__media--berry" aria-label="Bosvruchten confituur"></div>
+                    <div class="card__body">
+                        <h3>Bosvruchten Mix</h3>
+                        <p class="price">€ 6,20</p>
+                        <span class="badge badge--limited">Limited</span>
+                        <a class="btn btn--ghost" href="products/product-1.html">Bekijk</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media card__media--orange" aria-label="Sinaasappel confituur"></div>
+                    <div class="card__body">
+                        <h3>Sinaasappel Marmelade</h3>
+                        <p class="price">€ 5,80</p>
+                        <a class="btn btn--ghost" href="products/product-1.html">Bekijk</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media card__media--fig" aria-label="Vijg confituur"></div>
+                    <div class="card__body">
+                        <h3>Vijg & Honing</h3>
+                        <p class="price">€ 6,50</p>
+                        <span class="badge badge--new">Nieuw</span>
+                        <a class="btn btn--ghost" href="products/product-2.html">Bekijk</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media card__media--lemon" aria-label="Citroen confituur"></div>
+                    <div class="card__body">
+                        <h3>Citroen & Gember</h3>
+                        <p class="price">€ 6,10</p>
+                        <span class="badge badge--limited">Limited</span>
+                        <a class="btn btn--ghost" href="products/product-2.html">Bekijk</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="perks">
+            <div class="perk">
+                <h2>Gratis afhaling</h2>
+                <p>Haal je bestelling af op afspraak (fictief).</p>
+            </div>
+            <div class="perk">
+                <h2>Ingrediënten</h2>
+                <p>Fruit, suiker, citroen. Geen onnodige toevoegingen.</p>
+            </div>
+            <div class="perk">
+                <h2>Cadeau-klaar</h2>
+                <p>Voeg een kaartje toe (in admin “cadeau” aanvinken).</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Confituur & Co — Project Statisch Web</p>
+        <p><a href="admin/login.html">Admin login</a></p>
+    </footer>
+
+</body>
+</html>
