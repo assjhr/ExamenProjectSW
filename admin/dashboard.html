@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — Confit & Co</title>
+    <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+    <header class="container">
+        <div class="topbar">
+            <div class="brand">Dashboard</div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <a class="btn" href="product-form.html">+ Product toevoegen</a>
+                <a class="btn btn--ghost" href="login.html">Uitloggen</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="searchbar">
+                <label for="q" style="margin-right:6px;">Zoeken</label>
+                <input id="q" type="search" placeholder="Zoek op productnaam…">
+                <select aria-label="Filter voorraad">
+                    <option>Alle voorraadstatussen</option>
+                    <option>Op voorraad</option>
+                    <option>Bijna op</option>
+                    <option>Uitverkocht</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+    <section class="card">
+        <h1 style="margin-top:0;">Productinventaris</h1>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Productnaam</th>
+                        <th>Voorraad</th>
+                        <th>Prijs</th>
+                        <th>Acties</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Aardbei &amp; Vanille</td>
+                        <td><span class="badge badge--ok">Op voorraad</span></td>
+                        <td>€ 5,90</td>
+                        <td>
+                            <a class="btn btn--ghost" href="product-form.html">Bewerken</a>
+                            <a class="btn btn--danger" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Abrikoos</td>
+                        <td><span class="badge badge--ok">Op voorraad</span></td>
+                        <td>€ 5,50</td>
+                        <td>
+                            <a class="btn btn--ghost" href="product-form.html">Bewerken</a>
+                            <a class="btn btn--danger" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Bosvruchten Mix</td>
+                        <td><span class="badge badge--low">Bijna op</span></td>
+                        <td>€ 6,20</td>
+                        <td>
+                            <a class="btn btn--ghost" href="product-form.html">Bewerken</a>
+                            <a class="btn btn--danger" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Sinaasappel Marmelade</td>
+                        <td><span class="badge badge--ok">Op voorraad</span></td>
+                        <td>€ 5,80</td>
+                        <td>
+                            <a class="btn btn--ghost" href="product-form.html">Bewerken</a>
+                            <a class="btn btn--danger" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Vijg &amp; Honing</td>
+                        <td><span class="badge badge--out">Uitverkocht</span></td>
+                        <td>€ 6,50</td>
+                        <td>
+                            <a class="btn btn--ghost" href="product-form.html">Bewerken</a>
+                            <a class="btn btn--danger" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td>Citroen &amp; Gember</td>
+                        <td><span class="badge badge--ok">Op voorraad</span></td>
+                        <td>€ 6,10</td>
+                        <td>
+                            <a class="btn btn--ghost" href="product-form.html">Bewerken</a>
+                            <a class="btn btn--danger" href="#">Verwijderen</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    </main>
+</body>
+
+</html>

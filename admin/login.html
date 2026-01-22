@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin login — Confit & Co</title>
+    <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+    <main class="container" style="min-height:100vh; display:flex; align-items:center; justify-content:center;">
+        <section class="card" style="width:min(420px, 100%);">
+            <div class="topbar" style="margin-bottom:10px;">
+                <div class="brand">Confit & Co — Admin</div>
+            </div>
+
+            <form class="form" action="dashboard.html">
+                <div>
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="admin@confitco.be" required>
+                </div>
+
+                <div>
+                    <label for="pass">Wachtwoord</label>
+                    <input id="pass" type="password" placeholder="••••••••" required>
+                </div>
+
+                <button class="btn" type="submit">Inloggen</button>
+                <a class="btn btn--ghost" href="../index.html">Terug naar shop</a>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

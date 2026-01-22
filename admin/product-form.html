@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product bewerken — Confit & Co</title>
+    <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+    <header class="container">
+        <div class="topbar">
+            <div class="brand">Product toevoegen / aanpassen</div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <a class="btn btn--ghost" href="dashboard.html">Terug naar dashboard</a>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <form class="card form" action="dashboard.html">
+            <div class="grid-2">
+                <div>
+                    <label for="pid">Product ID</label>
+                    <input id="pid" type="text" placeholder="001" required>
+                </div>
+                <div>
+                    <label for="name">Productnaam</label>
+                    <input id="name" type="text" placeholder=" Aardbei & Vanille" required>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div>
+                    <label for="price">Prijs (€)</label>
+                    <input id="price" type="number" step="0.10" min="0" placeholder="5.90" required>
+                </div>
+                <div>
+                    <label for="stock">Voorraadstatus</label>
+                    <select id="stock" required>
+                        <option value="">Kies…</option>
+                        <option>Op voorraad</option>
+                        <option>Bijna op</option>
+                        <option>Uitverkocht</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div>
+                    <label for="category">Categorie</label>
+                    <select id="category">
+                        <option>Klassiek</option>
+                        <option>Seizoen</option>
+                        <option>Cadeau</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="grams">Inhoud (gram)</label>
+                    <input id="grams" type="number" min="0" placeholder="250">
+                </div>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox"> Cadeau-optie beschikbaar
+                </label>
+            </div>
+
+            <div>
+                <label for="desc">Beschrijving</label>
+                <textarea id="desc" rows="5" placeholder="Korte productbeschrijving…"></textarea>
+            </div>
+
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <button class="btn" type="submit">Opslaan</button>
+                <button class="btn btn--ghost" type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
