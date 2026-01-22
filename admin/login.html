@@ -9,23 +9,34 @@
 </head>
 
 <body>
+
+    <!-- Container die het login scherm mooi centreert -->
     <main class="container" style="min-height:100vh; display:flex; align-items:center; justify-content:center;">
+
+         <!-- Login kaart -->
         <section class="card" style="width:min(420px, 100%);">
+
+             <!-- Bovenste balk met titel -->
             <div class="topbar" style="margin-bottom:10px;">
                 <div class="brand">Confit & Co — Admin</div>
             </div>
 
+            <!-- Login formulier  -->
             <form class="form" action="dashboard.html">
+
+                <!-- E-mail veld -->
                 <div>
                     <label for="email">E-mail</label>
                     <input id="email" type="email" placeholder="admin@confitco.be" required>
                 </div>
 
+                <!-- Wachtwoord veld -->
                 <div>
                     <label for="pass">Wachtwoord</label>
                     <input id="pass" type="password" placeholder="••••••••" required>
                 </div>
 
+                 <!-- Knoppen -->
                 <button class="btn" type="submit">Inloggen</button>
                 <a class="btn btn--ghost" href="../index.html">Terug naar shop</a>
             </form>

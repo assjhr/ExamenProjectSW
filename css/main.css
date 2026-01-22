@@ -2,19 +2,20 @@
   --font-title: "Fraunces", serif;
   --font-body: "Inter", system-ui, -apple-system, Arial, sans-serif;
 
-  --bg: #fff8f3;
-  --surface: #ffffff;
-  --text: #1b1b1b;
-  --muted: #5b5b5b;
+  --bg: #fff8f3;        /* achtergrond van de hele site */
+  --surface: #ffffff;   /* witte blokken/cards */
+  --text: #1b1b1b;      /* standaard tekstkleur */
+  --muted: #5b5b5b;     /* lichtere tekst */
 
-  --radius: 16px;
-  --shadow: 0 10px 30px rgba(0,0,0,0.08);
-  --gap: 16px;
-  --max: 1100px;
+  --radius: 16px;       /* afgeronde hoeken */
+  --shadow: 0 10px 30px rgba(0,0,0,0.08); /* schaduw op cards */
+  --gap: 16px;          /* ruimte tussen elementen */
+  --max: 1100px;        /* max breedte van de content */
 }
 
 *{ box-sizing: border-box; }
 
+/* ===== Basis styling van de pagina ===== */
 body{
   margin: 0;
   font-family: var(--font-body);
@@ -23,9 +24,11 @@ body{
   line-height: 1.5;
 }
 
+/* Links */
 a{ color: inherit; text-decoration: none; }
 a:hover{ text-decoration: underline; }
 
+/* ===== Header bovenaan (logo + nav) ===== */
 .site-header{
   max-width: var(--max);
   margin: 0 auto;
@@ -35,6 +38,7 @@ a:hover{ text-decoration: underline; }
   align-items: center;
 }
 
+/* Tekst-logo */
 .logo{
   font-family: var(--font-title);
   font-weight: 700;
@@ -42,6 +46,7 @@ a:hover{ text-decoration: underline; }
   letter-spacing: 0.2px;
 }
 
+/* ===== Hero (grote intro bovenaan) ===== */
 .hero{
   max-width: var(--max);
   margin: 10px;
@@ -50,12 +55,14 @@ a:hover{ text-decoration: underline; }
   gap: 22px;
   align-items: stretch;
 
+   /* Achtergrondfoto in de hero */
   background-image: url("../img-confituurco/sunsetfraise.png");
   background-size: cover;
   background-position: center;
   border-radius: var(--radius);
 }
 
+/* Linker blok in de hero (tekst) */
 .hero__text{
   flex: 1;
   background: rgba(255, 255, 255, 0.686);
@@ -64,6 +71,7 @@ a:hover{ text-decoration: underline; }
   padding: 22px;
 }
 
+/* Titel in hero */
 .hero__text h1{
   font-family: var(--font-title);
   font-size: 40px;
@@ -71,11 +79,13 @@ a:hover{ text-decoration: underline; }
   margin: 0 0 10px;
 }
 
+/* Subtekst in hero */
 .hero__text p{
   margin: 0 0 14px;
   color: var(--muted);
 }
 
+/* Rechter kaart in de hero */
 .hero__card{
   width: 280px;
   background:  rgba(255, 255, 255, 0.686);
@@ -88,6 +98,7 @@ a:hover{ text-decoration: underline; }
   text-align: center;
 }
 
+/* Klein label in hero */
 .hero__badge{
   display: inline-block;
   font-weight: 600;
@@ -108,12 +119,14 @@ a:hover{ text-decoration: underline; }
   font-size: 14px;
 }
 
+/* Algemene secties (zoals producten) */
 .section{
   max-width: var(--max);
   margin: 0 auto;
   padding: 10px 20px 26px;
 }
 
+/* Titelblok van een sectie */
 .section__title h2{
   font-family: var(--font-title);
   margin: 0 0 6px;
@@ -125,12 +138,14 @@ a:hover{ text-decoration: underline; }
   color: var(--muted);
 }
 
+/* Product grid (cards) */
 .product-grid{
   display: flex;             
   flex-wrap: wrap;
   gap: var(--gap);
 }
 
+/* Eén productkaart */
 .card{
   width:  calc(33.333% - var(--gap));
   background: var(--surface);
@@ -142,11 +157,14 @@ a:hover{ text-decoration: underline; }
 }
 
 
+
+/* Afbeeldingsvak bovenaan de card */
 .card__media{
   height: 150px;
   overflow: hidden;
 }
 
+/* Afbeelding netjes laten vullen zonder uitrekken */
 .card__media img{
   width: 100%;
   height: 100%;
@@ -154,7 +172,7 @@ a:hover{ text-decoration: underline; }
   display: block;
 }
 
-
+/* Tekstgedeelte van de card */
 .card__body{
   padding: 14px;
   display: flex;
@@ -169,11 +187,13 @@ a:hover{ text-decoration: underline; }
   font-size: 18px;
 }
 
+/* Prijs-stijl */
 .price{
   margin: 0;
   font-weight: 600;
 }
 
+/* Labels; Nieuw / Sale / Limited */
 .badge{
   align-self: flex-start;
   display: inline-block;
@@ -183,6 +203,7 @@ a:hover{ text-decoration: underline; }
   border-radius: 999px;
 }
 
+/* Knoppen */
 .btn{
   display: inline-block;
   padding: 10px 14px;
@@ -193,6 +214,7 @@ a:hover{ text-decoration: underline; }
   width: fit-content;
 }
 
+/* Extra blok onderaan (perks) */
 .perks{
   max-width: var(--max);
   margin: 0 auto;
@@ -222,12 +244,14 @@ a:hover{ text-decoration: underline; }
   color: var(--muted);
 }
 
+/* Footer */
 .site-footer{
   padding: 22px 20px;
   text-align: center;
   color: var(--muted);
 }
 
+/* Responsive: op kleinere schermen */
 @media (max-width: 860px){
   .hero{
     flex-direction: column;
@@ -240,6 +264,7 @@ a:hover{ text-decoration: underline; }
   }
 }
 
+/* Detailpagina layout */
 .detail__header{
   display: flex;
   gap: 18px;
@@ -247,6 +272,7 @@ a:hover{ text-decoration: underline; }
   margin-top: 10px;
 }
 
+/* Links: afbeelding op detailpagina */
 .detail__media{
   width: 360px;
   height:320px;
@@ -256,6 +282,7 @@ a:hover{ text-decoration: underline; }
   background: linear-gradient(135deg, #ffb3c7, #ffd7e2);
 }
 
+/* Afbeelding netjes laten vullen */
 .detail__media img{
   width: 100%;
   height: 100%;
@@ -263,6 +290,7 @@ a:hover{ text-decoration: underline; }
   display: block;
 }
 
+/* Rechts: info op detailpagina */
 .detail__info{
   flex: 1;
   background: var(--surface);
@@ -276,8 +304,10 @@ a:hover{ text-decoration: underline; }
   margin: 0 0 8px;
 }
 
+/* Lichtere tekst */
 .muted{ color: var(--muted); }
 
+/* Blokken zoals specificaties/reviews */
 .detail__section{
   margin-top: 18px;
   background: var(--surface);
@@ -286,6 +316,7 @@ a:hover{ text-decoration: underline; }
   padding: 16px;
 }
 
+/* Reviews naast elkaar */
 .reviews{
   display: flex;
   flex-wrap: wrap;
@@ -301,6 +332,7 @@ a:hover{ text-decoration: underline; }
   min-width: 240px;
 }
 
+/* Detailpagina op mobiel */
 @media (max-width: 860px){
   .detail__header{ flex-direction: column; }
   .detail__media{ width: 100%; height: 220px; }

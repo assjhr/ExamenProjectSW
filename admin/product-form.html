@@ -9,6 +9,7 @@
 </head>
 
 <body>
+      <!-- Bovenste balk met titel en terugknop -->
     <header class="container">
         <div class="topbar">
             <div class="brand">Product toevoegen / aanpassen</div>
@@ -17,8 +18,14 @@
             </div>
         </div>
     </header>
+
+
     <main class="container">
+
+         <!-- Product formulier -->
         <form class="card form" action="dashboard.html">
+           
+             <!-- Product ID + naam -->
             <div class="grid-2">
                 <div>
                     <label for="pid">Product ID</label>
@@ -30,6 +37,7 @@
                 </div>
             </div>
 
+            <!-- Prijs + voorraadstatus -->
             <div class="grid-2">
                 <div>
                     <label for="price">Prijs (€)</label>
@@ -46,6 +54,7 @@
                 </div>
             </div>
 
+            <!-- Categorie + inhoud -->
             <div class="grid-2">
                 <div>
                     <label for="category">Categorie</label>
@@ -61,17 +70,20 @@
                 </div>
             </div>
 
+            <!-- Cadeau optie -->
             <div>
                 <label>
                     <input type="checkbox"> Cadeau-optie beschikbaar
                 </label>
             </div>
 
+             <!-- Productbeschrijving -->
             <div>
                 <label for="desc">Beschrijving</label>
                 <textarea id="desc" rows="5" placeholder="Korte productbeschrijving…"></textarea>
             </div>
 
+            <!-- Actieknoppen -->
             <div style="display:flex; gap:10px; flex-wrap:wrap;">
                 <button class="btn" type="submit">Opslaan</button>
                 <button class="btn btn--ghost" type="reset">Reset</button>
